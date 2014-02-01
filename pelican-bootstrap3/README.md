@@ -22,7 +22,7 @@ First:
 Then:
 
 Point the `THEME` variable in your `pelicanconf.py` to
-`/path/to/pelican-bootstrap3` and add 
+`/path/to/pelican-bootstrap3` and add
 
 ```
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
@@ -358,7 +358,7 @@ All you have to do, is:
 - enable the plugin, and the theme will add a search box on the right
   side of the menu
 - Add `'search'` to the `DIRECT_TEMPLATES` in your `pelicanconf.py`. E.g. `DIRECT_TEMPLATES = ('index', 'categories', 'authors', 'archives', 'search').
-By default, the Tipue search page is configured at "/search.html", but you can override that with the `SEARCH_URL` 
+By default, the Tipue search page is configured at "/search.html", but you can override that with the `SEARCH_URL`
 setting, which comes in handy if you have fancy rewrite rules in your Apache or Nginx configuration.
 
 ### Flattr
@@ -396,5 +396,3 @@ If you want more examples of what you could do with this theme, have a [look her
 ![](screenshot.png)
 
 ![](screenshot-article.png)
-
-
