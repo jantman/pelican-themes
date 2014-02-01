@@ -42,6 +42,7 @@
 
             {% if DISPLAY_TAGS_ON_SIDEBAR %}
                 <li class="list-group-item"><a href="{{ SITEURL }}/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+                <li class="list-group-item">
                     {% for tag in tag_cloud|sort(attribute='1') %}
                         <span class="tag-{{ tag.1 }}">
                             <a href="{{ SITEURL }}/{{ tag.0.url }}">
@@ -49,6 +50,7 @@
                             </a>
                         </span>
                 {% endfor %}
+                </li>
             {% endif %}
         </ul>
     </section>
