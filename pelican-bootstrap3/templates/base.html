@@ -57,6 +57,10 @@
     <!-- JavaScript plugins (requires jQuery) -->
     <script src="http://code.jquery.com/jquery.js"></script>
 
+    {% if SHOW_GITHUB_RIBBON %}
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/forkongithub.min.css" type="text/css" />
+    {% endif %}
+
     {% if FEED_ALL_ATOM %}
         <link href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate"
               title="{{ SITENAME }} ATOM Feed"/>
@@ -69,6 +73,9 @@
     {% include 'includes/ga.html' %}
 </head>
 <body>
+{% if SHOW_GITHUB_RIBBON %}
+{% include 'includes/githubribbon.html' %}
+{% endif %}
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">

@@ -68,6 +68,9 @@ The theme can show your most recently active GitHub repos in the sidebar. To ena
 * `GITHUB_SKIP_FORK`
 * `GITHUB_SHOW_USER_LINK`
 
+Enabling `GITHUB_USER` will also add a responsive version of the standard
+"Fork me on Github" banner to the page.
+
 ### Twitter Feed
 
 The theme can show a Twitter feed widget of your recent tweets in the

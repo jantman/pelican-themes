@@ -11,9 +11,8 @@
   padding:5px 40px;
   font-size:1rem;
   line-height:2rem;
-  position:relative;
+  position: relative;
   transition:0.5s;
-  z-index: 1500;
 }
 
 #forkongithub a:hover {
@@ -41,19 +40,19 @@
 
 @media screen and (min-width:800px) {
   #forkongithub {
-    position:absolute;
     display:block;
-    top:0;
     right:0;
     width:200px;
     overflow:hidden;
     height:200px;
     z-index: 1500;
+    position: fixed;
+    top: 0px;
   }
   #forkongithub a {
     width:200px;
-    position:absolute;
-    top:60px;
+    position:fixed;
+    top:40px;
     right:-60px;
     transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
