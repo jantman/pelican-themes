@@ -4,7 +4,7 @@ This is a Bootstrap 3 theme for Pelican. It's fully responsive. Bootstrap 3 has 
 
 ## NOTE
 
-If you want to adjust this theme to your own liking, I encourage you to fork it. This theme has started to gather more and more attention in the form of stars and forks. I'm not seeing much real participation though :) If you make improvements that are useful to others and can make the theme better in general **please don't hesitate to make a pull request**.
+If you want to adjust this theme to your own liking, I encourage you to fork it. This theme has started to gather more and more attention in the form of stars and forks. I'm not seeing much real participation though. If you make improvements that are useful to others and can make the theme better in general **please don't hesitate to make a pull request**.
 
 ## Installation
 
@@ -64,6 +64,17 @@ The theme can show your most recently active GitHub repos in the sidebar. To ena
 * `GITHUB_REPO_COUNT`
 * `GITHUB_SKIP_FORK`
 * `GITHUB_SHOW_USER_LINK`
+
+### Twitter
+
+The theme can show a Twitter feed widget of your recent tweets in the
+sidebar. To enable, you must create a widget through your
+[Twitter Settings](https://twitter.com/settings/widgets), configured as a User
+timeline for your username, with the Light theme. Leave height and link color
+blank. Then copy the value of the `data-widget-id` attrbiute from the
+generated source (this should be a long numeric string) and put it in your
+settings file as {{TWITTER_WIDGET_ID}}. You will also need to specify the
+{{TWITTER_USERNAME}} variable, as that is also used.
 
 ### Bootswatch and other Bootstrap 3 themes
 

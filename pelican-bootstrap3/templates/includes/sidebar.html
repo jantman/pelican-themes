@@ -52,5 +52,8 @@
             {% endif %}
         </ul>
     </section>
+    {% if TWITTER_WIDGET_ID %}
+    {% include 'includes/tweetlist.html' %}
+    {% endif %}
     {% include 'includes/github.html' %}
 </aside>
