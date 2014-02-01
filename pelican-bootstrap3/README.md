@@ -27,6 +27,7 @@ This theme honors the following standard Pelican settings:
 	* `DISPLAY_PAGES_ON_MENU`
 	* `DISPLAY_CATEGORIES_ON_MENU`
 	* `MENUITEMS`
+    * `TWITTER_USERNAME` - displays Tweet button on posts
 * Analytics & Comments
 	* `GOOGLE_ANALYTICS`
 	* `DISQUS_SITENAME`
@@ -52,6 +53,8 @@ SOCIAL = (('twitter', 'http://twitter.com/DaanDebie'),
 * **Categories** will be shown if `DISPLAY_CATEGORIES_ON_SIDEBAR` is set to _True_
 * **Recent Posts** will be shown if `DISPLAY_RECENT_POSTS_ON_SIDEBAR` is set to _True_
 	* Use `RECENT_POST_COUNT` to control the amount of recent posts. Defaults to **5**
+* **Twitter Feed** will be shown as described below
+* **GitHub Repositories** can be shown as described below
 
 ### reStructuredText styles
 
@@ -65,7 +68,7 @@ The theme can show your most recently active GitHub repos in the sidebar. To ena
 * `GITHUB_SKIP_FORK`
 * `GITHUB_SHOW_USER_LINK`
 
-### Twitter
+### Twitter Feed
 
 The theme can show a Twitter feed widget of your recent tweets in the
 sidebar. To enable, you must create a widget through your
