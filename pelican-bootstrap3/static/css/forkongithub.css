@@ -1,5 +1,6 @@
 /* Thanks to Christian Heilmann for this */
 /* from: <https://github.com/codepo8/css-fork-on-github-ribbon> */
+/* and: <http://codepo8.github.io/css-fork-on-github-ribbon/> */
 #forkongithub a {
   background:#000;
   color:#fff;
@@ -12,6 +13,7 @@
   line-height:2rem;
   position:relative;
   transition:0.5s;
+  z-index: 1500;
 }
 
 #forkongithub a:hover {
@@ -28,11 +30,13 @@
   left:0;
   height:1px;
   background:#fff;
+  z-index: 1500;
 }
 
 #forkongithub a::after {
   bottom:1px;
   top:auto;
+  z-index: 1500;
 }
 
 @media screen and (min-width:800px) {
@@ -44,6 +48,7 @@
     width:200px;
     overflow:hidden;
     height:200px;
+    z-index: 1500;
   }
   #forkongithub a {
     width:200px;
@@ -53,5 +58,6 @@
     transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
     box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+    z-index: 1500;
   }
 }
