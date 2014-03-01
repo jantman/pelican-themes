@@ -29,8 +29,9 @@ This theme honors the following standard Pelican settings:
 	* `MENUITEMS`
     * `TWITTER_USERNAME` - displays Tweet button on posts
 * Analytics & Comments
-	* `GOOGLE_ANALYTICS`
-	* `DISQUS_SITENAME`
+	* `GOOGLE_ANALYTICS` - old-style Google Analytics
+    * `GA_DOMAIN` - Universal Analytics / analytics.js
+    * `DISQUS_SITENAME`
 	* `PIWIK_URL`, `PIWIK_SSL_URL` and `PIWIK_SITE_ID`
 
 It uses the `tag_cloud` variable for displaying tags in the sidebar. You can control the amount of tags shown with: `TAG_CLOUD_MAX_ITEMS`
