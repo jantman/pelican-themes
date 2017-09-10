@@ -37,6 +37,9 @@ var github = (function(){
           render(options.target, repos);
         }
       });
+    },
+    showSpecificRepos: function(options){
+      render(options.target, options.repos);
     }
   };
 })();
